@@ -1,0 +1,94 @@
+.side-view {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: #fff;
+  max-width: 30%;
+  height: 100vh;
+  text-align: start;
+}
+
+.side-view__slider {
+  display: flex;
+  align-items: center;
+}
+
+.side-view__img {
+  height: 30vh;
+  overflow: hidden;
+}
+
+.side-view__img > img {
+  width: 100%;
+}
+
+.side-view__info {
+  padding: 0 1rem 0 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  display: inline-block;
+  border-radius: 0;
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  color: #fff;
+  text-align: center;
+  background: transparent;
+}
+
+.slider__btn {
+  width: 30px;
+}
+
+.slider__btn > img {
+  width: 25px;
+}
+
+.side-view__todos {
+  padding: 1rem;
+}
+
+.side-view__todos__wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.side-view__todos__input {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #f9f7f6;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  width: 80%;
+  transition: all 0.2s;
+  margin-right: -3.25rem;
+  font-size: 1rem;
+}
+
+.side-view__todos__input:focus {
+  outline: none;
+  width: 87%;
+  background-color: #f0eeee;
+}
+
+.side-view__todos__btn {
+  background-color: #c69963;
+}
+
+@media only screen and (max-width: 700px) {
+  .side-view {
+    max-width: 100%;
+    bottom: 0;
+    left: 0;
+    top: 50%;
+    overflow-y: scroll;
+    height: 50vh;
+  }
+}
